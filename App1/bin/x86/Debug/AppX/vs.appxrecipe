@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-01-12T16:02:42.521</Modified>
+      <Modified>2022-01-17T13:46:36.406</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\App1.exe">
       <PackagePath>entrypoint\App1.exe</PackagePath>
-      <Modified>2022-01-12T16:02:42.062</Modified>
+      <Modified>2022-01-17T13:46:35.973</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\phuon\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -90,19 +90,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\App1.xr.xml">
       <PackagePath>App1.xr.xml</PackagePath>
-      <Modified>2022-01-12T16:02:41.982</Modified>
+      <Modified>2022-01-17T13:23:14.341</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-01-12T15:58:31.011</Modified>
+      <Modified>2022-01-17T13:46:35.884</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-01-12T15:58:31.011</Modified>
+      <Modified>2022-01-17T13:46:35.884</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\Pages\LoginPage.xbf">
+      <PackagePath>Pages\LoginPage.xbf</PackagePath>
+      <Modified>2022-01-17T13:46:35.885</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\Pages\Navigation.xbf">
+      <PackagePath>Pages\Navigation.xbf</PackagePath>
+      <Modified>2022-01-17T13:46:35.885</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\Pages\ProfilePage.xbf">
+      <PackagePath>Pages\ProfilePage.xbf</PackagePath>
+      <Modified>2022-01-17T13:46:35.885</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\Register\RegisterPage.xbf">
       <PackagePath>Register\RegisterPage.xbf</PackagePath>
-      <Modified>2022-01-12T16:02:41.988</Modified>
+      <Modified>2022-01-17T13:46:35.884</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -110,11 +122,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-01-12T12:04:47.114</Modified>
+      <Modified>2022-01-17T12:51:47.200</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\Core\App1.exe">
       <PackagePath>App1.exe</PackagePath>
-      <Modified>2022-01-12T16:02:42.518</Modified>
+      <Modified>2022-01-17T13:46:36.402</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

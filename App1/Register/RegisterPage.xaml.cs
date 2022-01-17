@@ -15,6 +15,10 @@ using Windows.UI.Xaml.Navigation;
 using System.Diagnostics;
 using App1.Entity;
 using Newtonsoft.Json;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
+using App1.Service;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -51,34 +55,33 @@ namespace App1.Register
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
+            var service = new UserService();
             Validate(firstName.Text, lastName.Text, email.Text, address.Text, phone.Text, password.Password);
-            if(check == 0)
+            if(check != 0)
             {
                 return;
             }
             var user = new User()
             {
-                FirstName = firstName.Text,
-                LastName = lastName.Text,
-                Email = email.Text,
-                Password = password.Password,
-                Address = address.Text,
-                Gender = checkGender,
-                Avatar = avatar.Text,
-                Content = content.Text,
-                BirthDay = dateChanged,
+                firstName = firstName.Text,
+                lastName = lastName.Text,
+                email = email.Text,
+                phone = phone.Text,
+                password = password.Password,
+                address = address.Text,
+                gender = checkGender,
+                avatar = avatar.Text,
+                birthday = dateChanged,
             };
-
-            var jsonUser = JsonConvert.SerializeObject(user);
-            Debug.WriteLine(jsonUser);
+            await service.Register(user);
         }
 
         private void birthday_DateChanged(CalendarDatePicker sender, CalendarDatePickerDateChangedEventArgs args)
         {
             var date = sender;
-            dateChanged = date.Date.Value.ToString("dd-MM-yyyy");
+            dateChanged = date.Date.Value.ToString("yyyy-MM-dd");
         }
 
         private void Validate(string Fname, string Lname, string Email, string Address, string Phone, string Password)
@@ -114,5 +117,7 @@ namespace App1.Register
                 check++;
             }
         }
+
+        
     } 
 }

@@ -76,6 +76,15 @@
     <AppxPackagedFile Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\Pages\LoginPage.xbf">
+      <PackagePath>Pages\LoginPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\Pages\Navigation.xbf">
+      <PackagePath>Pages\Navigation.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\Pages\ProfilePage.xbf">
+      <PackagePath>Pages\ProfilePage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\phuon\source\repos\App1\App1\bin\x86\Debug\Register\RegisterPage.xbf">
       <PackagePath>Register\RegisterPage.xbf</PackagePath>
     </AppxPackagedFile>

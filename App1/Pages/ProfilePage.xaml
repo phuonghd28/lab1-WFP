@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="App1.Pages.ProfilePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock x:Name="fullName" HorizontalAlignment="Left" Margin="201,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="180"><Run Text="Name"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="email" HorizontalAlignment="Left" Margin="201,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="180" Text="Email"/>
+        <TextBlock x:Name="address" HorizontalAlignment="Left" Margin="201,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="180" Text="Address"/>
+        <TextBlock x:Name="birthday" HorizontalAlignment="Left" Margin="201,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="180" Text="Birthday"/>
+
+    </Grid>
+</Page>
