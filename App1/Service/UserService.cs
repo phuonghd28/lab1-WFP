@@ -17,9 +17,8 @@ namespace App1.Service
     {
         private string apiBaseUrl = "https://music-i-like.herokuapp.com/api";
         private PasswordVault store = new PasswordVault();
-        public async Task Register(User user)
+        public async Task<bool> Register(User user)
         {
-            var dialog = new ContentDialog();
             var userJson = JsonConvert.SerializeObject(user);
             Debug.WriteLine(userJson);
             var http = new HttpClient();
@@ -28,16 +27,10 @@ namespace App1.Service
             Debug.WriteLine(request);
             if (request.StatusCode == System.Net.HttpStatusCode.Created)
             {
-                dialog.Title = "Success";
-                dialog.Content = "Register Success";
-                dialog.CloseButtonText = "Close";
-                await dialog.ShowAsync();
+                return true;
             } else
             {
-                dialog.Title = "Error";
-                dialog.Content = "Register Failed";
-                dialog.CloseButtonText = "Close";
-                await dialog.ShowAsync();
+                return false;
             }
         }
 

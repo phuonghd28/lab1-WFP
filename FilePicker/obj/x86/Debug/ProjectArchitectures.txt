@@ -1,0 +1,1 @@
+C:\Users\phuon\source\repos\App1\FilePicker\FilePicker.csproj;x86

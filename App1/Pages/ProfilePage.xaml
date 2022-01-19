@@ -9,10 +9,17 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock x:Name="fullName" HorizontalAlignment="Left" Margin="201,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="180"><Run Text="Name"/><LineBreak/><Run/></TextBlock>
-        <TextBlock x:Name="email" HorizontalAlignment="Left" Margin="201,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="180" Text="Email"/>
-        <TextBlock x:Name="address" HorizontalAlignment="Left" Margin="201,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="180" Text="Address"/>
-        <TextBlock x:Name="birthday" HorizontalAlignment="Left" Margin="201,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="180" Text="Birthday"/>
+        <TextBlock x:Name="fullName" HorizontalAlignment="Left" Margin="201,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="471"><Run Text="Name"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="email" HorizontalAlignment="Left" Margin="201,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="471" Text="Email"/>
+        <TextBlock x:Name="address" HorizontalAlignment="Left" Margin="201,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="471" Text="Address"/>
+        <TextBlock x:Name="birthday" HorizontalAlignment="Left" Margin="201,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="471" Text="Birthday"/>
+        <TextBlock x:Name="fullName_Copy" HorizontalAlignment="Left" Margin="134,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="42" Text="Name:"/>
+        <TextBlock x:Name="fullName_Copy1" HorizontalAlignment="Left" Margin="134,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="42" Text="Email:"/>
+        <TextBlock x:Name="fullName_Copy2" HorizontalAlignment="Left" Margin="135,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="64" Text="Address:"/>
+        <TextBlock x:Name="fullName_Copy3" HorizontalAlignment="Left" Margin="134,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="64" Text="Birthday:"/>
+        <TextBlock HorizontalAlignment="Left" Margin="35,26,0,0" Text="User Profile" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" FontSize="30" TextAlignment="Center"/>
+        <Button Content="Edit Profile" Margin="90,271,0,0" VerticalAlignment="Top" Width="98" IsEnabled="False"/>
+        <Button Content="Logout" Margin="217,271,0,0" VerticalAlignment="Top" Width="98"/>
 
     </Grid>
 </Page>

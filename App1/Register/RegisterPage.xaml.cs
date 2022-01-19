@@ -57,6 +57,7 @@ namespace App1.Register
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
+            var dialog = new ContentDialog();
             var service = new UserService();
             Validate(firstName.Text, lastName.Text, email.Text, address.Text, phone.Text, password.Password);
             if(check != 0)
@@ -75,7 +76,21 @@ namespace App1.Register
                 avatar = avatar.Text,
                 birthday = dateChanged,
             };
-            await service.Register(user);
+            var result = await service.Register(user);
+            if(result)
+            {
+                dialog.Title = "Success";
+                dialog.Content = "Register Success";
+                dialog.CloseButtonText = "Close";
+                await dialog.ShowAsync();
+                this.Frame.Navigate(typeof(Pages.LoginPage));
+            } else
+            {
+                dialog.Title = "Error";
+                dialog.Content = "Register Failed";
+                dialog.CloseButtonText = "Close";
+                await dialog.ShowAsync();
+            }
         }
 
         private void birthday_DateChanged(CalendarDatePicker sender, CalendarDatePickerDateChangedEventArgs args)
@@ -118,6 +133,9 @@ namespace App1.Register
             }
         }
 
-        
+        private void Handle_Login(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Pages.LoginPage));
+        }
     } 
 }

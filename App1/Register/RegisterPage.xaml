@@ -26,7 +26,7 @@
         <RadioButton Content="Male" Margin="170,422,0,0" VerticalAlignment="Top" GroupName="gender" Width="73" Checked="HandleCheck"/>
         <RadioButton Content="Fermale" Margin="270,422,0,0" VerticalAlignment="Top" GroupName="gender" Checked="HandleCheck"/>
         <RadioButton Content="Other" Margin="370,422,0,0" VerticalAlignment="Top" GroupName="gender" Checked="HandleCheck"/>
-        <Button Content="Register" Margin="272,610,0,0" Width="120" Click="Button_Click" VerticalAlignment="Top"/>
+        <Button Content="Register" Margin="202,610,0,0" Width="120" Click="Button_Click" VerticalAlignment="Top"/>
 
         <TextBox x:Name="content" HorizontalAlignment="Left" Margin="170,535,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.515,0.615" Width="348" Header="Introduction"/>
         <CalendarDatePicker x:Name="birthday" Margin="171,469,0,0" Width="348" Header="Birthday" VerticalAlignment="Top" DateChanged="birthday_DateChanged"/>
@@ -36,6 +36,7 @@
         <TextBlock x:Name="checkPassword" HorizontalAlignment="Left" Height="17" Margin="547,206,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Foreground="Red" />
         <TextBlock x:Name="checkAddress" HorizontalAlignment="Left" Height="17" Margin="547,266,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Foreground="Red" />
         <TextBlock x:Name="checkPhone" HorizontalAlignment="Left" Height="17" Margin="547,326,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" Foreground="Red"/>
+        <Button Content="Login" Margin="362,610,0,0" Width="120" Click="Handle_Login" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>
